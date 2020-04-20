@@ -1,0 +1,8 @@
+fips_begin_module(PDCurses)
+fips_include_directories(.)
+add_definitions(-DPDC_WIDE)
+fips_files_ex(. *.h GROUP "Header Files")
+fips_files_ex(common *.h GROUP "common")
+fips_files_ex(pdcurses *.c GROUP "pdcurses")
+fips_files_ex(wincon *.c *.h GROUP "wincon")
+fips_end_module()
